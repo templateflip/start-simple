@@ -1,0 +1,16 @@
+extends ./_layout-root.pug
+
+block header
+  header
+    .jumbotron
+      .container
+        h1.display-3.text-center.mb-4= site.title
+        +menu(data.menu.main, 'nav justify-content-center')
+
+block footer
+  footer.pt-4.pb-4.text-muted
+    .container
+      p.text-center &copy; <a href="#{site.base + '/'}">#{site.title}</a> - Built with <a href="https://mmpilot.kunruchcreations.com/" target="_blank">MMPilot</a>
+
+block content
+  div!= page.content
