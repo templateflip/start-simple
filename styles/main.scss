@@ -1,7 +1,10 @@
 @import 'bootstrap/scss/bootstrap.scss';
-
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 .tf-brand{
   text-transform: uppercase;
+  color: white;
 }
 
 .tf-menu {
@@ -14,15 +17,32 @@
 
 .tf-header {
   position: relative;
-  background: url("/images/hero-image.jpg") no-repeat center center fixed;
+  background: url("/images/hero-image.jpg") no-repeat center center;
   background-size: cover;
   height: 500px;
 }
 
 .tf-header::before {
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
   width: 100%;
   height: 500px;
   content: ' ';
+}
+
+.tf-header-heading {
+  text-transform: uppercase;
+  color: white;
+  margin-top :4rem;
+}
+
+.tf-header-heading-content{
+  margin-top: 2rem;
+
+}
+
+.tf-section-heading {
+text-transform: uppercase;
+margin-top: 4rem;
+margin-bottom: 2rem;
 }
