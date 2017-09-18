@@ -1,16 +1,28 @@
 extends ./_layout-root.pug
 
 block header
-  header
-    .jumbotron
-      .container
-        h1.display-3.text-center.mb-4= site.title
-        +menu(data.menu.main, 'nav justify-content-center')
+  header.tf-header
+    nav.navbar.navbar-expand
+        .container
+          a.navbar-brand.tf-brand(href='#') Start Simple
+          ul.navbar-nav.tf-menu
+            li.nav-item
+              a.nav-link(href='#') Portfolio
+            li.nav-item
+              a.nav-link(href='#') About
+            li.nav-item
+              a.nav-link(href='#') Pricing
+            li.nav-item
+              a.nav-link(href="#") Careers
+            li.nav-item
+              a.nav-link(href="#") Blogs
+            li.nav-item
+              a.nav-link(href="#") Get a Quote
 
 block footer
-  footer.pt-4.pb-4.text-muted
-    .container
-      p.text-center &copy; <a href="#{site.base + '/'}">#{site.title}</a> - Built with <a href="https://mmpilot.kunruchcreations.com/" target="_blank">MMPilot</a>
-
+  footer.container
+    .row
+      .col-md-12.col-sm-12.col-lg-6.col-xl-6 &copy 2015 ARKENEA. All rights reserved.
+      .text-right.col-md-12.col-sm-12.col-lg-6.col-xl-6 Designer - Prashant | MADE WITH LOVE IN INDIA
 block content
   div!= page.content
