@@ -17,7 +17,7 @@ body{
 
 .tf-header {
   position: relative;
-  background: url("/images/hero-image.jpg") no-repeat center center;
+  background: url("/images/1-hero-image.jpg") no-repeat center center;
   background-size: cover;
   height: 500px;
 }
@@ -50,4 +50,22 @@ margin-bottom: 2rem;
 .card {
   border: none;
   border-radius: none;
+}
+
+.contact {
+  margin-top: 3rem;
+}
+
+.contact-heading {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+tf-footer-content {
+  min-height: 400px;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
