@@ -4,7 +4,8 @@ title: 'Home'
 description: 'This is a basic starter template for MMPilot which includes Bootstrap Framework.'
 ---
 .container.tf-section-heading
-  h3 Our Success Stroies
+  h3.tf-section-heading Our Success Stroies
+  |______
 .container
   .row
     .col-lg-4.col-xl-4.col-md-12.col-sm-12.pt-2
@@ -34,5 +35,29 @@ description: 'This is a basic starter template for MMPilot which includes Bootst
           .card-body.text-right.pt-3
           a(href="#" class="card-link") Continue reading...
 
+
+#tf-carousel-Indicators.carousel.slide(data-ride="carousel")
+  ol.carousel-indicators
+    li(data-target="#tf-carousel-Indicators" data-slide-to="0").active
+    li(data-target="#tf-carousel-Indicators" data-slide-to="1")
+    li(data-target="#tf-carousel-Indicators" data-slide-to="2")
+
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100(src="/images/5-start-simple-slider.jpg" alt="start-simple-slider")
+    .carousel-item
+      img.d-block.w-100(src="/images/6-start-simple-slider.jpg" alt="start-simple-slider")
+    .carousel-item
+      img.d-block.w-100(src="/images/7-start-simple-slider.jpg" alt="start-simple-slider")
+
+  a.carousel-control-prev(href="#tf-carousel-Indicators" role="button" data-slide="prev")
+    span.carousel-control-prev-icon(aria-hidden="true")
+    span.sr-only Previous
+
+  a.carousel-control-next(href="#tf-carousel-Indicators" role="button" data-slide="next")
+    span.carousel-control-next-icon(aria-hidden="true")
+    span.sr-only Next
+
 .container
+
             
