@@ -2,10 +2,10 @@ extends ./_layout-root.pug
 
 block header
   header.tf-header
-    nav.navbar.navbar-expand
-      .container
-        a.navbar-brand.tf-brand(href='#') Start Simple
-        ul.navbar-nav.tf-menu
+    nav.navbar.navbar-expand.py-5
+      .container.tf-menu
+        h1.a.navbar-brand.tf-brand(href='#').p.pl-3 Start Simple
+        ul.navbar-nav
           li.nav-item
             a.nav-link(href='#') Portfolio
           li.nav-item
@@ -15,31 +15,32 @@ block header
           li.nav-item
             a.nav-link(href="#") Careers
           li.nav-item
-            a.nav-link(href="#") Blogs
+            a.nav-link(href="#") Blog
           li.nav-item
             a.nav-link(href="#") Get a Quote
 
-    .container
+    .container.tf-header-heading
       .row
-        h1.col-md-12.col-sm-12.col-lg-6.col-xl-6.tf-header-heading Technical Cofounders to Your Mobile & Web Startup 
-          p.lead.tf-header-heading-content TO build a successful app, you need a smart product strategy, engaging UX, Killer Designs,and a talented mobile development team.
-          h5 Good News 
-          | - You've come to the right place
+        .col-md-6.col-sm-12
+          h2.h1 Technical Cofounders to Your Mobile &<br/> Web Startup  
+        
       .row
-        .col-md-6.col-sm-6.col-lg-3.col-xl-3
-          input(type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Your Email Address")
-        .col-md-6.col-sm-6.col-lg-3.col-xl-3
-          p.a.btn.btn-primary(href="#") Request a Quoate 
+        .col-md-5.col-sm-12
+          p.tf-header-heading-content.lead To build a successful app, you need a smart product strategy, engaging UX, killer designs, and a talented mobile development team.
+          p
+            strong.text-uppercase Good News
+            span.tf-header-heading-content - You've come to the right place
+      .row
+        .col-md-3.col-sm-12
+          input(type="email" class="form-control"  aria-describedby="emailHelp"  placeholder="*Your Email Address")
+        .col-md-2.col-sm-12
+          p.a.btn.btn-primary(href="#") Request a Quote 
     
-      
-         
-     
-
 block footer
-  footer.bg-dark.mt-4
-    .container.text-light.mt-4
+  footer.bg-dark.py-4.mt-4
+    .container.text-light
       .row
-        .col-md-12.col-sm-12.col-lg-6.col-xl-6 &copy 2015 Start Simple. All rights reserved.
-        .text-right.col-md-12.col-sm-12.col-lg-6.col-xl-6 Design - Templateflip 
+        .col-md-6.col-sm-12 &copy 2015 Start Simple. All rights reserved.
+        .text-right.col-md-6.col-sm-12 Design - Templateflip 
 block content
   div!= page.content
