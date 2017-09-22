@@ -3,11 +3,10 @@ layout: 'default'
 title: 'Start Simple'
 description: 'This is a basic starter template for MMPilot which includes Bootstrap Framework.'
 ---
- 
+
 .container
   h2.h3.tf-section-heading Our Success Stroies
-  |_______
-.container.tf-reading-section
+.container
   .row
     .col-md-4.col-sm-12.pt-2
       .card
@@ -30,11 +29,11 @@ description: 'This is a basic starter template for MMPilot which includes Bootst
           a.text-dark(href="#" class="card-link") Continue reading...
 
 
-#tf-carousel-Indicators.carousel.slide.mt-5(data-ride="carousel")
+#tf-carousel.carousel.slide.mt-5(data-ride="carousel")
   ol.carousel-indicators
-    li(data-target="#tf-carousel-Indicators" data-slide-to="0").active
-    li(data-target="#tf-carousel-Indicators" data-slide-to="1")
-    li(data-target="#tf-carousel-Indicators" data-slide-to="2")
+    li(data-target="#tf-carousel" data-slide-to="0").active
+    li(data-target="#tf-carousel" data-slide-to="1")
+    li(data-target="#tf-carousel" data-slide-to="2")
 
   .carousel-inner
     .carousel-item.active(style="background-image: url('/images/5-start-simple-slider.jpg');")
@@ -50,11 +49,11 @@ description: 'This is a basic starter template for MMPilot which includes Bootst
         p.slider-text-1 "Start Simple thinks outside the box and offer solutions through the creative process of developing apps.<br/>They care about their customers."
         p.slider-text-2 Hypnotherapist and Best Selling Author<br/> - Glenn Harrold
 
-  a.carousel-control-prev(href="#tf-carousel-Indicators" role="button" data-slide="prev")
+  a.carousel-control-prev(href="#tf-carousel" role="button" data-slide="prev")
     span.carousel-control-prev-icon(aria-hidden="true")
     span.sr-only Previous
 
-  a.carousel-control-next(href="#tf-carousel-Indicators" role="button" data-slide="next")
+  a.carousel-control-next(href="#tf-carousel" role="button" data-slide="next")
     span.carousel-control-next-icon(aria-hidden="true")
     span.sr-only Next
 
