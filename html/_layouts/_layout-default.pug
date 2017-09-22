@@ -2,48 +2,42 @@ extends ./_layout-root.pug
 
 block header
   header.tf-header
-    nav.navbar.navbar-expand-lg.py-5.navbar-dark
-      .container.tf-menu
-        h1.a.navbar-brand.tf-brand(href='#').p.pl-3 Start Simple
-        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation")
-          span.navbar-toggler-icon
-        #navbarToggler.collapse.navbar-collapse
-          ul.navbar-nav.font-weight-bold.float-right
+    nav.navbar.py-5.navbar-dark
+      .container
+        h1
+          a.navbar-brand(href='/') Start Simple
+        #navbar
+          ul.nav.pull-right
             li.nav-item
-              a.nav-link(href='#') Portfolio <span class="sr-only">
+              a.nav-link(href='#') Home
             li.nav-item
-             a.nav-link(href='#') About
+            a.nav-link(href='#work') Work
             li.nav-item
-             a.nav-link(href='#') Pricing
-            li.nav-item
-              a.nav-link(href="#") Careers
-            li.nav-item
-              a.nav-link(href="#") Blog
-            li.nav-item
-              a.nav-link(href="#") Get a Quote
-
-    .container.tf-header-heading
+            a.nav-link(href='#contact') Contact
+          
+    .container
       .row
         .col-md-7.col-sm-12
-          h2.h1 Technical Cofounders<br/>to Your Mobile &<br/> Web Startup  
-        
+          h2 Technical Cofounders<br/>to Your Mobile &<br/> Web Startup        
       .row
-        .col-md-5.col-sm-12
-          p.tf-header-heading-content.lead To build a successful app, you need a smart product strategy, engaging UX, killer designs, and a talented mobile development team.
-          p
+        .col-md-7.col-sm-12
+          p.lead.mt-1 To build a successful app, you need a smart product strategy, engaging UX, killer designs, and a talented mobile development team.
+          p.mt-5
             strong.text-uppercase Good News
-            span.tf-header-heading-content - You've come to the right place
+            span  - You've come to the right place
+
       .row.no-gutters
-        .col-md-3.col-sm-12.tf-hh-col
-          input(type="email" class="form-control"  aria-describedby="emailHelp"  placeholder="*Your Email Address")
+        .col-md-4.col-sm-12.tf-hh-col
+          input.mt-1(type="email" class="form-control"  aria-describedby="emailHelp"  placeholder="*Your Email Address")
         .col-md-3.col-sm-12
-          p.tf-header-heading-btn.a.btn.btn-primary(href="#") Request a Quote 
-    
+          p.tf-header-heading-btn.a.btn.btn-primary.btn-block.mt-1(href="#") Request a Quote
+
 block footer
-  footer.bg-dark.py-4.mt-4
+  footer.bg-dark.py-4.mt-5
     .container.text-light
       .row
         .col-md-6.col-sm-12 &copy 2015 Start Simple. All rights reserved.
-        .col-md-6.col-sm-12.text-right.tf-fdesign Design - Templateflip 
+        .col-md-6.col-sm-12.text-right.tf-design Design - <a href="https://templateflip.com" target="_blank">Templateflip</a>
+
 block content
   div!= page.content

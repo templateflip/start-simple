@@ -1,17 +1,17 @@
-# mmpilot-bootstrap-template
-This is a starter template for [MMPilot](https://mmpilot.kunruchcreations.com/) - It includes [Bootstrap Framework](https://getbootstrap.com).
+# Start Simple Bootstrap 4 Template
+A simple one page template for Startups and Small Business built with Bootstrap 4 by TemplateFlip.com
 
-It has the bare bone files along with Bootstrap to setup and kickstart your website with MMPilot. 
+**[Live Demo](https://templateflip.com/demo/?template=start-simple)**
 
-**[Live Demo](https://kunruch.github.io/mmpilot-bootstrap-template/)**
+**[Download](https://templateflip.com/templates/start-simple/)**
 
-You may also want to check out other [MMPilot templates](https://mmpilot.kunruchcreations.com/templates/)
+<a href="https://templateflip.com/templates/start-simple/"><img src="" alt="start-simple screenshot"><img></a>
 
-## How to use this template
+You may also want to check out other [Website templates](https://templateflip.com/templates/).
 
-1. Clone or [download](https://github.com/kunruch/mmpilot-bootstrap-template/archive/master.zip) this template. Or run the following command if you have MMPilot installed:
+## Use this template from source (Optional)
 
-   `mmpilot new bootstrap <project-name>`
+1. Clone this template.
 
 2. Install dependencies: ``npm install``
 
@@ -31,4 +31,5 @@ You may also want to check out other [MMPilot templates](https://mmpilot.kunruch
 
 ## License
 
-Licensed under the MIT License
+Licensed under the Creative [Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/).
+You can use this template for free in both personal as well as commercial projects. In return, just credit [https://templateflip.com](https://templateflip.com/) for the website template on your site.

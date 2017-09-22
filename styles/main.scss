@@ -5,91 +5,71 @@ body{
   font-family: 'Oxygen', sans-serif;
 }
 
-.bg-light {
-  background-color: #ededed !important;
-}
-
-.tf-brand {
-  text-transform: uppercase;
-  color: white;
-  font-weight: 700;
-}
-
-.tf-menu{
-  text-transform: uppercase;
-  font-size: 16px;
-  color: white;
-}
-
-.navbar-dark.navbar-nav.nav-link {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.navbar-collapse{
-  flex-basis: 100%;
-}
-@media(min-width: 991px) {
-  .navbar-collapse{
-    flex-basis: auto;
-  }
-}
-
 .tf-header {
   position: relative;
-  background: url("/images/1-hero-image.jpg") no-repeat center center;
+  background: url("../images/1-hero-image.jpg") no-repeat center center;
   background-size: cover;
   height: 650px;
-}
-
-.tf-header::before {
-  background: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  width: 100%;
-  height:650px;
-  content: ' ';
-}
-
-.tf-header-heading {  
   color: #ffffff;
-}
-h2.h1 {
-  text-transform: uppercase;
-  margin-top :1rem;
-  font-weight:700;
-  font-size: 28px;
-  margin-bottom: 0;
+
+  &::before {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height:650px;
+    content: ' ';
   }
 
-@media(min-width: 768px) {
-  h2.h1 {
+  h1 {
     text-transform: uppercase;
-    margin-top :2rem;
-    font-weight:700;
-    font-size: 36px;
-    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .nav {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.7)!important;
+
+    &:hover {
+      color: white!important;
     }
   }
 
-@media(min-width: 992px) {
-h2.h1 {
-  text-transform: uppercase;
-  margin-top :4rem;
-  font-weight:700;
-  font-size: 48px;
-  margin-bottom: 0;
+  h2 {    
+    text-transform: uppercase;
+    margin-top :1rem;
+    font-weight: 700;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
   }
 }
 
-@media(max-width: 768px) {
-  .tf-header-heading-btn {
-    margin-top: .5rem;
-    width:100%;
+@include media-breakpoint-up(lg) {
+  .tf-header h2 {
+    text-transform: uppercase;
+    margin-top: 4rem;
+    font-size: 48px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .tf-header h2 {
+    text-transform: uppercase;
+    margin-top :2rem;
+    font-size: 36px;
   }
 }
 
 .tf-hh-col {
-  padding-right: .5rem !important;
+  padding-right: 0.5rem !important;
 }
+
 @media(max-width:768px ) 
 {
   .tf-hh-col{
@@ -97,16 +77,11 @@ h2.h1 {
   }
 }
 
-.tf-header-heading-content {
-  margin-top: 2rem;
-  font-size: 16px;
-}
-
 .tf-section-heading {
   text-transform: uppercase;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #383838;
 }
 
@@ -136,10 +111,6 @@ h2.h1 {
   border: none;
   font-size: 14px;
   padding: 12px 16px;
-}
-
-.tf-reading-section {
-  font-size:16px;
 }
 
 .card-text {
@@ -234,14 +205,28 @@ h2.h1 {
   padding-bottom: .5rem;
   padding-right: .5rem !important;
 }
+
 @media(max-width: 992px) {
   .tf-fh-col {
     padding-right: 0 !important;
   }
 }
 
+.tf-design a {
+  color: inherit;
+  border-bottom: 1px dashed;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 @media(max-width: 768px ) {
-.tf-fdesign{
+.tf-design {
   text-align: left !important;
   }
+}
+
+.bg-light {
+  background-color: #ededed !important;
 }
