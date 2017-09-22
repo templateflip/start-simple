@@ -1,7 +1,7 @@
 {
-  "name": "mmpilot-bootstrap-template",
+  "name": "start-simple",
   "version": "1.0.0",
-  "description": "This is a starter template for MMPilot with Bootstrap Framework.",
+  "description": "A simple one page template for Startups and Small Business built with Bootstrap 4",
   "scripts": {
     "clean": "mmpilot clean",
     "build": "mmpilot build",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kunruch/mmpilot-bootstrap-template.git"
+    "url": "git+https://github.com/templateflip/start-simple.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kunruch/mmpilot-bootstrap-template/issues"
+    "url": "https://github.com/templateflip/start-simple/issues"
   },
-  "homepage": "https://github.com/kunruch/mmpilot-bootstrap-template#readme",
+  "homepage": "https://github.com/templateflip/start-simple#readme",
   "devDependencies": {
     "mmpilot": "^0.6.3",
     "npm-run-all": "^4.0.1"
