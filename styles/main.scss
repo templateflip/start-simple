@@ -23,12 +23,14 @@ body{
   h1 {
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 1px;
   }
 
   .navbar-nav {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
+    letter-spacing: 1px;
   }
 
   .nav-link {
@@ -43,8 +45,9 @@ body{
   h2 {    
     text-transform: uppercase;
     margin-top :1rem;
+    font-weight: 700;
     font-size: 1.75rem;
-    margin-bottom: 0;
+    letter-spacing: 1px;
   }
 }
 
@@ -55,45 +58,29 @@ body{
 }
 
 @media(min-width: 768px) {
-  h2.h1 {
+  .tf-header h2 {
     text-transform: uppercase;
     margin-top :2rem;
-    font-weight:700;
     font-size: 36px;
-    margin-bottom: 0;
-    }
-  }
-
-@media(min-width: 992px) {
-h2.h1 {
-  text-transform: uppercase;
-  margin-top :4rem;
-  font-weight:700;
-  font-size: 48px;
-  margin-bottom: 0;
   }
 }
 
-@media(max-width: 768px) {
-  .tf-header-heading-btn {
-    margin-top: .5rem;
-    width:100%;
+@media(min-width: 992px) {
+  .tf-header h2 {
+    text-transform: uppercase;
+    margin-top: 4rem;
+    font-size: 48px;
   }
 }
 
 .tf-hh-col {
-  padding-right: .5rem !important;
+  padding-right: 0.5rem !important;
 }
 @media(max-width:768px ) 
 {
   .tf-hh-col{
     padding-right: 0 !important;
   }
-}
-
-.tf-header-heading-content {
-  margin-top: 2rem;
-  font-size: 16px;
 }
 
 .tf-section-heading {
@@ -234,11 +221,21 @@ h2.h1 {
   }
 }
 
+.tf-design a {
+  color: inherit;
+  border-bottom: 1px dashed;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 @media(max-width: 768px ) {
-.tf-fdesign{
+.tf-design {
   text-align: left !important;
   }
 }
+
 
 
 .bg-light {

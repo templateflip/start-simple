@@ -13,38 +13,39 @@ block header
             li.nav-item
               a.nav-link(href='#') Portfolio <span class="sr-only">
             li.nav-item
-             a.nav-link(href='#') About
+            a.nav-link(href='#') About
             li.nav-item
-             a.nav-link(href='#') Pricing
+            a.nav-link(href='#') Pricing
             li.nav-item
               a.nav-link(href="#") Careers
             li.nav-item
               a.nav-link(href="#") Blog
             li.nav-item
               a.nav-link(href="#") Get a Quote
-
+          
     .container
       .row
         .col-md-7.col-sm-12
-          h2.h1 Technical Cofounders<br/>to Your Mobile &<br/> Web Startup  
-        
+          h2 Technical Cofounders<br/>to Your Mobile &<br/> Web Startup        
       .row
-        .col-md-5.col-sm-12
-          p.tf-header-heading-content.lead To build a successful app, you need a smart product strategy, engaging UX, killer designs, and a talented mobile development team.
-          p
+        .col-md-7.col-sm-12
+          p.lead.mt-1 To build a successful app, you need a smart product strategy, engaging UX, killer designs, and a talented mobile development team.
+          p.mt-5
             strong.text-uppercase Good News
-            span.tf-header-heading-content - You've come to the right place
+            span  - You've come to the right place
+
       .row.no-gutters
-        .col-md-3.col-sm-12.tf-hh-col
-          input(type="email" class="form-control"  aria-describedby="emailHelp"  placeholder="*Your Email Address")
+        .col-md-4.col-sm-12.tf-hh-col
+          input.mt-1(type="email" class="form-control"  aria-describedby="emailHelp"  placeholder="*Your Email Address")
         .col-md-3.col-sm-12
-          p.tf-header-heading-btn.a.btn.btn-primary(href="#") Request a Quote 
-    
+          p.tf-header-heading-btn.a.btn.btn-primary.btn-block.mt-1(href="#") Request a Quote
+
 block footer
-  footer.bg-dark.py-4.mt-4
+  footer.bg-dark.py-4.mt-5
     .container.text-light
       .row
         .col-md-6.col-sm-12 &copy 2015 Start Simple. All rights reserved.
-        .col-md-6.col-sm-12.text-right.tf-fdesign Design - Templateflip 
+        .col-md-6.col-sm-12.text-right.tf-design Design - <a href="https://templateflip.com" target="_blank">Templateflip</a>
+
 block content
   div!= page.content
