@@ -2,20 +2,18 @@ extends ./_layout-root.pug
 
 block header
   header.tf-header
-    nav.navbar.navbar-expand-lg.py-5.navbar-dark
+    nav.navbar.py-5.navbar-dark
       .container
         h1
           a.navbar-brand(href='/') Start Simple
-        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation")
-          span.navbar-toggler-icon
-        #navbarToggler.collapse.navbar-collapse
-          ul.navbar-nav.float-right
+        #navbar
+          ul.nav.pull-right
             li.nav-item
               a.nav-link(href='#') Home
             li.nav-item
-            a.nav-link(href='#') Work
+            a.nav-link(href='#work') Work
             li.nav-item
-            a.nav-link(href='#') Contact
+            a.nav-link(href='#contact') Contact
           
     .container
       .row
