@@ -34,11 +34,10 @@ body{
   }
 
   .nav-link {
-    color: white!important;
-    border-bottom: 2px solid transparent;
+    color: rgba(255, 255, 255, 0.7)!important;
 
     &:hover {
-      border-bottom: 2px solid white;
+      color: white!important;
     }
   }
 
