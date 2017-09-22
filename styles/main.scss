@@ -51,21 +51,11 @@ body{
   }
 }
 
-@media(min-width: 991px) {
+@include media-breakpoint-up(lg) {
   .tf-header .navbar-collapse{
     flex-basis: auto;
   }
-}
 
-@media(min-width: 768px) {
-  .tf-header h2 {
-    text-transform: uppercase;
-    margin-top :2rem;
-    font-size: 36px;
-  }
-}
-
-@media(min-width: 992px) {
   .tf-header h2 {
     text-transform: uppercase;
     margin-top: 4rem;
@@ -73,9 +63,18 @@ body{
   }
 }
 
+@include media-breakpoint-up(md) {
+  .tf-header h2 {
+    text-transform: uppercase;
+    margin-top :2rem;
+    font-size: 36px;
+  }
+}
+
 .tf-hh-col {
   padding-right: 0.5rem !important;
 }
+
 @media(max-width:768px ) 
 {
   .tf-hh-col{
@@ -232,8 +231,6 @@ body{
   text-align: left !important;
   }
 }
-
-
 
 .bg-light {
   background-color: #ededed !important;
