@@ -8,7 +8,7 @@ block header
         button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation")
           span.navbar-toggler-icon
         #navbarToggler.collapse.navbar-collapse
-          ul.navbar-nav.font-weight-bold.mr-auto.mt-2.mt-lg-0
+          ul.navbar-nav.font-weight-bold.float-right
             li.nav-item
               a.nav-link(href='#') Portfolio <span class="sr-only">
             li.nav-item
@@ -34,7 +34,7 @@ block header
             strong.text-uppercase Good News
             span.tf-header-heading-content - You've come to the right place
       .row.no-gutters
-        .col-md-3.col-sm-12.pr-2
+        .col-md-3.col-sm-12.tf-hh-col
           input(type="email" class="form-control"  aria-describedby="emailHelp"  placeholder="*Your Email Address")
         .col-md-3.col-sm-12
           p.tf-header-heading-btn.a.btn.btn-primary(href="#") Request a Quote 
@@ -44,6 +44,6 @@ block footer
     .container.text-light
       .row
         .col-md-6.col-sm-12 &copy 2015 Start Simple. All rights reserved.
-        .text-right.col-md-6.col-sm-12 Design - Templateflip 
+        .col-md-6.col-sm-12.text-right.tf-fdesign Design - Templateflip 
 block content
   div!= page.content
