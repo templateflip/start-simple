@@ -3,12 +3,13 @@ extends ./_layout-root.pug
 block header
   header.tf-header
     nav.navbar.navbar-expand-lg.py-5.navbar-dark
-      .container.tf-menu
-        h1.a.navbar-brand.tf-brand(href='#').p.pl-3 Start Simple
+      .container
+        h1
+          a.navbar-brand(href='/') Start Simple
         button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation")
           span.navbar-toggler-icon
         #navbarToggler.collapse.navbar-collapse
-          ul.navbar-nav.font-weight-bold.float-right
+          ul.navbar-nav.float-right
             li.nav-item
               a.nav-link(href='#') Portfolio <span class="sr-only">
             li.nav-item
@@ -22,7 +23,7 @@ block header
             li.nav-item
               a.nav-link(href="#") Get a Quote
 
-    .container.tf-header-heading
+    .container
       .row
         .col-md-7.col-sm-12
           h2.h1 Technical Cofounders<br/>to Your Mobile &<br/> Web Startup  
