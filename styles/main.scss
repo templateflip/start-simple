@@ -50,6 +50,20 @@ body{
   }
 }
 
+
+@include media-breakpoint-down(xs) {
+  .tf-header {
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    #navbar {
+      margin: 0 auto;
+    }
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .tf-header h2 {
     text-transform: uppercase;
