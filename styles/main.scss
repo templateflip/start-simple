@@ -70,7 +70,8 @@ body{
   padding-right: 0.5rem !important;
 }
 
-@media(max-width:768px ) 
+
+@include media-breakpoint-down(sm)
 {
   .tf-hh-col{
     padding-right: 0 !important;
@@ -84,12 +85,11 @@ body{
   font-weight: 700;
   color: #383838;
 }
-
-@media(max-width: 576px) {
+@include media-breakpoint-down(sm) {
   .tf-section-heading {
   font-size: 22px;
   margin-top: 1rem;
-  margin-bottom:0;
+  margin-bottom: .5rem;
   }
 }
 
@@ -137,7 +137,7 @@ body{
   padding: 6rem 4rem;
 }
 
-@media(max-width: 576px ) {
+@include media-breakpoint-down(xs) {
   .slider-text-2 {
     font-size: 16px;
   }
@@ -151,7 +151,7 @@ body{
   }
 }
 
-@media(max-width: 768px ) {
+@include media-breakpoint-down(sm) {
   .carousel-caption {
     padding: 5rem 1rem;
   }
@@ -182,17 +182,16 @@ body{
   padding: 4rem 4rem;  
 }
 
-@media(max-width: 576px ) {
+@include media-breakpoint-down(xs) {
   .tf-contact-heading {
-    font-size: 16px;
     padding: 2rem 1rem;
   }
 }
 
-@media(max-width: 768px ) {
+@include media-breakpoint-down(sm) {
   .tf-contact-heading {
     padding: 2rem 1rem;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -206,7 +205,7 @@ body{
   padding-right: .5rem !important;
 }
 
-@media(max-width: 992px) {
+@include media-breakpoint-down(md) {
   .tf-fh-col {
     padding-right: 0 !important;
   }
@@ -221,7 +220,7 @@ body{
   }
 }
 
-@media(max-width: 768px ) {
+@include media-breakpoint-down(sm) {
 .tf-design {
   text-align: left !important;
   }
