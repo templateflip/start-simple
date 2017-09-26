@@ -5,7 +5,7 @@ A simple one page template for Startups and Small Business built with Bootstrap 
 
 **[Download](https://templateflip.com/templates/start-simple/)**
 
-<a href="https://templateflip.com/templates/start-simple/"><img src="" alt="start-simple screenshot"><img></a>
+<a href="https://templateflip.com/templates/start-simple/"><img src="https://raw.githubusercontent.com/templateflip/start-simple/master/assets/images/start-simple-screenshot.jpg" alt="Start Simple template screenshot"><img></a>
 
 You may also want to check out other [Website templates](https://templateflip.com/templates/).
 
