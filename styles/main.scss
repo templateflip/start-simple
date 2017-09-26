@@ -51,19 +51,19 @@
   .tf-hh-col {
     padding-right: 0.5rem !important;
   }
-  
-  @include media-breakpoint-down(sm) {
-    h2 {
-      margin-top: 1rem;
-      font-size: 24px;
-    }
-  }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-down(lg) {
     h2 {
       text-transform: uppercase;
-      margin-top : 2rem;
-      font-size: 36px;
+      margin-top : 3rem;
+      font-size: 42px;
+    }
+  }
+  
+  @include media-breakpoint-down(md) {
+    h2 {
+      margin-top: 2rem;
+      font-size: 30px;
     }
   }
 
