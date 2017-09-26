@@ -4,85 +4,88 @@ title: 'Start Simple'
 description: 'This is a basic starter template for MMPilot which includes Bootstrap Framework.'
 ---
 
-#work.container
-  h2.h3.tf-section-heading Our Success Stroies
-.container
-  .row
-    .col-md-4.col-sm-12.pt-2
-      .card
-        img.img-fluid.card-img-top(src="images/2-start-simple.jpg" alt="2-start-simple")
-        .card-body
-          p.card-text.text-muted Sleep Easily downloaded over 400,000 times - generating consistent revenues.
-          a.text-dark(href="#" class="card-link") Continue reading...
+.tf-work-section
+  #work.container
+    h2.h3 Our Success Stroies
+  .container
+    .row
+      .col-md-4.col-sm-12.pt-2
+        .card
+          img.img-fluid.card-img-top(src="images/2-start-simple.jpg" alt="2-start-simple")
+          .card-body
+            p.text-muted Sleep Easily downloaded over 400,000 times - generating consistent revenues.
+            a.text-dark(href="#" class="card-link") Continue reading...
 
-    .col-md-4.col-sm-12.pt-2
-      .card
-        img.img-fluid.card-img-top(src="images/3-start-simple.jpg" alt="3-start-simple")
-        .card-body
-          p.card-text.text-muted Canvsly featured on TechCrunch and winner of the kiip Build Fund 2013 and Mom's Choice Awards.
-          a.text-dark(href="#" class="card-link") Continue reading...
-    .col-md-4.col-sm-12.pt-2
-      .card
-        img.img-fluid.card-img-top(src="images/4-start-simple.jpg" alt="4-start-simple")
-        .card-body
-          p.card-text.text-muted Canvsly featured on TechCrunch and winner of the kiip Build Fund 2013 and Mom's Choice Awards.
-          a.text-dark(href="#" class="card-link") Continue reading...
+      .col-md-4.col-sm-12.pt-2
+        .card
+          img.img-fluid.card-img-top(src="images/3-start-simple.jpg" alt="3-start-simple")
+          .card-body
+            p.text-muted Canvsly featured on TechCrunch and winner of the kiip Build Fund 2013 and Mom's Choice Awards.
+            a.text-dark(href="#" class="card-link") Continue reading...
+      .col-md-4.col-sm-12.pt-2
+        .card
+          img.img-fluid.card-img-top(src="images/4-start-simple.jpg" alt="4-start-simple")
+          .card-body
+            p.text-muted Canvsly featured on TechCrunch and winner of the kiip Build Fund 2013 and Mom's Choice Awards.
+            a.text-dark(href="#" class="card-link") Continue reading...
+
+.tf-quotes-section
+  #tf-carousel.carousel.slide.mt-5(data-ride="carousel")
+    ol.carousel-indicators
+      li(data-target="#tf-carousel" data-slide-to="0").active
+      li(data-target="#tf-carousel" data-slide-to="1")
+      li(data-target="#tf-carousel" data-slide-to="2")
+
+    .carousel-inner
+      .carousel-item.active(style="background-image: url('images/5-start-simple-slider.jpg');")
+        .carousel-caption
+          p.slider-text-1 "Start Simple thinks outside the box and offer solutions through the creative process of developing apps.<br/>They care about their customers."
+          p.slider-text-2 Hypnotherapist and Best Selling Author<br/> - Glenn Harrold
+      .carousel-item(style="background-image: url('images/6-start-simple-slider.jpg');")
+        .carousel-caption
+          p.slider-text-1 "Start Simple thinks outside the box and offer solutions through the creative process of developing apps.<br/>They care about their customers."
+          p.slider-text-2 Hypnotherapist and Best Selling Author<br/> - Glenn Harrold
+      .carousel-item(style="background-image: url('images/7-start-simple-slider.jpg');")
+        .carousel-caption
+          p.slider-text-1 "Start Simple thinks outside the box and offer solutions through the creative process of developing apps.<br/>They care about their customers."
+          p.slider-text-2 Hypnotherapist and Best Selling Author<br/> - Glenn Harrold
+
+    a.carousel-control-prev(href="#tf-carousel" role="button" data-slide="prev")
+      span.carousel-control-prev-icon(aria-hidden="true")
+      span.sr-only Previous
+
+    a.carousel-control-next(href="#tf-carousel" role="button" data-slide="next")
+      span.carousel-control-next-icon(aria-hidden="true")
+      span.sr-only Next
 
 
-#tf-carousel.carousel.slide.mt-5(data-ride="carousel")
-  ol.carousel-indicators
-    li(data-target="#tf-carousel" data-slide-to="0").active
-    li(data-target="#tf-carousel" data-slide-to="1")
-    li(data-target="#tf-carousel" data-slide-to="2")
+.tf-contact-section 
+  #contact.container
+    h2.h4 Tell us About Your Requirement
+  .container
+    .row
+      .col-md-4.col-sm-12
+        form
+          h3.h5 Contact us
+          .row.no-gutters
+            .col-lg-6.col-md-12.col-sm-12.tf-contact-col
+              input.bg-light(type="text" class="form-control"  placeholder="*Name")
+            .col-lg-6.col-md-12.col-sm-12.pb-2
+              input.bg-light(type="email" class="form-control" id="inputEmail3" placeholder="*Your Email Address")
+    
+          .row.pb-2.no-gutters
+            .col-md-12.col-sm-12
+              textarea.bg-light(name="", cols="30", rows="5")(type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="*Your Message")
+          button(type="submit" class="btn btn-primary") Submit
 
-  .carousel-inner
-    .carousel-item.active(style="background-image: url('images/5-start-simple-slider.jpg');")
-      .carousel-caption
-        p.slider-text-1 "Start Simple thinks outside the box and offer solutions through the creative process of developing apps.<br/>They care about their customers."
-        p.slider-text-2 Hypnotherapist and Best Selling Author<br/> - Glenn Harrold
-    .carousel-item(style="background-image: url('images/6-start-simple-slider.jpg');")
-      .carousel-caption
-        p.slider-text-1 "Start Simple thinks outside the box and offer solutions through the creative process of developing apps.<br/>They care about their customers."
-        p.slider-text-2 Hypnotherapist and Best Selling Author<br/> - Glenn Harrold
-    .carousel-item(style="background-image: url('images/7-start-simple-slider.jpg');")
-      .carousel-caption
-        p.slider-text-1 "Start Simple thinks outside the box and offer solutions through the creative process of developing apps.<br/>They care about their customers."
-        p.slider-text-2 Hypnotherapist and Best Selling Author<br/> - Glenn Harrold
-
-  a.carousel-control-prev(href="#tf-carousel" role="button" data-slide="prev")
-    span.carousel-control-prev-icon(aria-hidden="true")
-    span.sr-only Previous
-
-  a.carousel-control-next(href="#tf-carousel" role="button" data-slide="next")
-    span.carousel-control-next-icon(aria-hidden="true")
-    span.sr-only Next
-
-#contact.container
-  h2.h4.font-weight-bold.tf-contact-heading Tell us About Your Requirement
-.container
-  .row
-    .col-md-4.col-sm-12
-      form
-        h3.h5.text-uppercase.font-weight-bold.tf-contact Contact us
-        .row.no-gutters
-          .col-lg-6.col-md-12.col-sm-12.tf-fh-col
-            input.bg-light(type="text" class="form-control"  placeholder="*Name")
-          .col-lg-6.col-md-12.col-sm-12.pb-2
-            input.bg-light(type="email" class="form-control" id="inputEmail3" placeholder="*Your Email Address")
-  
-        .row.pb-2.no-gutters
-          .col-md-12.col-sm-12
-            textarea.bg-light(name="", cols="30", rows="5")(type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="*Your Message")
-        button(type="submit" class="btn btn-primary").btn-contact Submit
-
-    .col-md-8.col-sm-12.text-uppercase.float-right.text-right.tf-contact
-        h3.h5.font-weight-bold Address
-        span Start Simple<br/>Xyz
-        p
-        h3.h5.font-weight-bold Phone
-        p (011)450-1856
-        h3.h5.font-weight-bold Email
-        p Contact@example.com
+      .col-md-8.col-sm-12.float-right.text-right
+          h3.h5 Address
+          span Start Simple<br/>Xyz
+          p
+          h3.h5 Phone
+          p (011)450-1856
+          h3.h5 Email
+          p Contact@example.com
 
 
             
