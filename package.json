@@ -1,7 +1,7 @@
 {
   "name": "start-simple",
   "version": "1.0.0",
-  "description": "A simple one page template for Startups and Small Business built with Bootstrap 4",
+  "description": "A simple one page template for Startups and Small Business built with Bootstrap 4 by TemplateFlip.com",
   "scripts": {
     "clean": "mmpilot clean",
     "build": "mmpilot build",
@@ -10,21 +10,23 @@
     "dev-watch": "mmpilot watch -d",
     "dev": "npm-run-all clean dev-build --parallel dev-watch serve",
     "prod": "npm-run-all clean build serve",
-    "deploy": "npm-run-all clean build && mmpilot deploy"
+    "deploy": "npm-run-all clean build && mmpilot deploy",
+    "dist": "npm run build && node dist.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/templateflip/start-simple.git"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "TemplateFlip.com",
+  "license": "Creative Commons Attribution 3.0 Unported License",
   "bugs": {
     "url": "https://github.com/templateflip/start-simple/issues"
   },
   "homepage": "https://github.com/templateflip/start-simple#readme",
   "devDependencies": {
     "mmpilot": "^0.6.3",
-    "npm-run-all": "^4.0.1"
+    "npm-run-all": "^4.0.1",
+    "shelljs": "^0.7.6"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta"
