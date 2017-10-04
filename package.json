@@ -1,6 +1,6 @@
 {
   "name": "start-simple",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple one page template for Startups and Small Business built with Bootstrap 4 by TemplateFlip.com",
   "scripts": {
     "clean": "mmpilot clean",
@@ -11,7 +11,7 @@
     "dev": "npm-run-all clean dev-build --parallel dev-watch serve",
     "prod": "npm-run-all clean build serve",
     "deploy": "npm-run-all clean build && mmpilot deploy",
-    "dist": "npm run build && node dist.js"
+    "dist": "npm-run-all clean dev-build && node dist.js"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/templateflip/start-simple#readme",
   "devDependencies": {
-    "mmpilot": "^0.6.3",
-    "npm-run-all": "^4.0.1",
-    "shelljs": "^0.7.6"
+    "mmpilot": "^0.6.5",
+    "npm-run-all": "^4.1.1",
+    "shelljs": "^0.7.8"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta"
