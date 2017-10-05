@@ -1,7 +1,7 @@
 **Start Simple Bootstrap Template**
-v1.0.1
+v1.0.2
 Release Date: 26th Sept, 2017
-Update Date: 4th Oct, 2017
+Update Date: 5th Oct, 2017
 
 A simple one page template for Startups and Small Business built with Bootstrap 4
 
