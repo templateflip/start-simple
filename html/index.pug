@@ -65,17 +65,16 @@ description: 'This is a basic starter template for MMPilot which includes Bootst
   .container
     .row
       .col-md-4.col-sm-12
-        form
-          h3.h5 Contact us
+        h3.h5 Contact us
+        form(action="https://formspree.io/ompr93@gmail.com" method="POST")
           .row.no-gutters
             .col-lg-6.col-md-12.col-sm-12.tf-contact-col
-              input.bg-light(type="text" class="form-control"  placeholder="*Name")
+              input.bg-light(type="text" class="form-control" name="name"  placeholder="*Name" required)
             .col-lg-6.col-md-12.col-sm-12.pb-2
-              input.bg-light(type="email" class="form-control" id="inputEmail3" placeholder="*Your Email Address")
-    
+              input.bg-light(type="email" class="form-control" name="_replyto" placeholder="*Your Email Address" required)
           .row.pb-2.no-gutters
             .col-md-12.col-sm-12
-              textarea.bg-light(name="", cols="30", rows="5")(type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="*Your Message")
+              textarea.bg-light.mb-2(class="form-control" name="message" type="text" placeholder="*Your Message" rows="5" required)
           button(type="submit" class="btn btn-primary") Submit
 
       .col-md-8.col-sm-12.float-right.text-right
