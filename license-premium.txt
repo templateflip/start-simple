@@ -1,5 +1,5 @@
 **Start Simple Bootstrap Template**
-v1.0.4
+v1.0.5
 Release Date: 26th Sept, 2017
 Update Date: 2nd Feb, 2018
 
