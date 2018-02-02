@@ -1,6 +1,6 @@
 {
   "name": "start-simple",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple one page template for Startups and Small Business built with Bootstrap 4 by TemplateFlip.com",
   "scripts": {
     "clean": "mmpilot clean",
@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/templateflip/start-simple#readme",
   "devDependencies": {
-    "mmpilot": "^0.6.5",
+    "mmpilot": "^0.6.6",
     "npm-run-all": "^4.1.2",
-    "shelljs": "^0.8.0",
+    "shelljs": "^0.8.1",
     "node-sass": "^4.7.2"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta"
+    "bootstrap": "^4.0.0"
   }
 }

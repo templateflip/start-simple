@@ -1,7 +1,7 @@
 **Start Simple Bootstrap Template**
-v1.0.3
+v1.0.4
 Release Date: 26th Sept, 2017
-Update Date: 16th Jan, 2018
+Update Date: 2nd Feb, 2018
 
 A simple one page template for Startups and Small Business built with Bootstrap 4
 
@@ -13,7 +13,7 @@ Download - https://templateflip.com/templates/start-simple/
 License Terms
 
 Licensed under the Creative Commons Attribution 3.0 license.
-You can use this template for free in both personal as well as commercial projects.
+You can use this template for free in personal projects.
 In return you need to keep the credit to https://templateflip.com from the site footer.
 
 You can buy a premium license to be allowed to remove the footer link.
